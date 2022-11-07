@@ -3,6 +3,7 @@ import { dades } from "./dades.js"
 
 export const validaNouUsuari = (usuari)=>{
     var igual
+    //creamos una array para guardar los datos que nos envian
     const dadesUsuari=[]
 
     dadesUsuari.nick=usuari.nick

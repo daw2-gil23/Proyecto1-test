@@ -9,7 +9,7 @@ export const modificaData = (tiempo) =>{
             let mes  = tiempoActual.getMonth()
 
             //Hacemos esto para si el numero es menor a 10 se añada un 0 al principio
-            //El padstart lo que hace es añadirte en el valor que pongas en la longitud que le digas.
+            //El padstart lo que hace es rellenar la variable con lo que pongamos hasta alcanzar una longitud dada. 
             //Ejemplo: si es dia 1 saldar 01 pero si es dia 12 saldra 12 sin 0 
             //Esto pasa por que hemos dicho que la longitud sea 2. El dia 1 es un numero asi que se rellanara con 0 en cambio El dia 12 son dos numeros asi que no hara nada
             let dia = String(tiempoActual.getDate()).padStart(2, '0')

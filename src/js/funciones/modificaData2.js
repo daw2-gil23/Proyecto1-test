@@ -1,14 +1,11 @@
 
 export const modificaData2 = (tiempo) =>{
 
-            //miramos si se ha pasado bien la variable tiempo
-            console.log("modifica2 : " + tiempo)
-
             //creamos un objeto del tipo Date con la fecha tiempo
             let tiempoActual = new Date(tiempo)
 
             //Hacemos esto para si el numero es menor a 10 se añada un 0 al principio
-            //El padstart lo que hace es añadirte en el valor que pongas en la longitud que le digas.
+            //El padstart lo que hace es rellenar la variable con lo que pongamos hasta alcanzar una longitud dada. 
             //Ejemplo: si es enero (1) saldar 01 pero si es diciembre(12) saldra 12 sin 0 
             //Esto pasa por que hemos dicho que la longitud sea 2. Enero es un numero asi que se rellanara con 0 en cambio diciembre son dos numeros asi que no hara nada
             let mes= String(tiempoActual.getMonth() + 1).padStart(2, '0')
